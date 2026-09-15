@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>香港美食與點餐華語｜互動學習</title>
+<meta name="description" content="從茶餐廳、飲茶到街頭小吃，用普通話、廣東話與粵拼練習香港點餐情境。" />
+<meta name="theme-color" content="#0d6b57" />
+<style>
+:root{--green:#0d6b57;--green2:#114b43;--orange:#e8643b;--gold:#f2b233;--cream:#fff7e9;--ink:#17313c;--muted:#667782;--card:#fffdf8;--line:#ead9be;--blue:#2b7bb9;--pink:#e75b7d;--shadow:0 14px 32px rgba(30,48,48,.12)}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#fff9ed,#f5ead7);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif}.app{min-height:100vh}.topbar{position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;padding:12px 22px;background:rgba(255,250,239,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(183,144,92,.18)}.brand{display:flex;gap:10px;align-items:center;font-weight:900}.brand .dot{width:14px;height:14px;border-radius:50%;background:var(--orange);box-shadow:18px 0 0 var(--green),36px 0 0 var(--gold)}.nav-actions{display:flex;gap:8px}.btn{border:0;border-radius:999px;padding:11px 18px;font-weight:800;cursor:pointer;transition:.2s;box-shadow:none}.btn:hover{transform:translateY(-1px)}.btn.primary{background:var(--green);color:#fff}.btn.orange{background:var(--orange);color:#fff}.btn.light{background:#fff;border:1px solid var(--line);color:var(--ink)}.btn.gold{background:var(--gold);color:#3e2b00}.shell{max-width:1200px;margin:auto;padding:24px}.view{display:none;animation:fade .2s ease}.view.active{display:block}@keyframes fade{from{opacity:.25;transform:translateY(8px)}to{opacity:1;transform:none}}.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:stretch}.hero-text{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:42px;box-shadow:var(--shadow)}.eyebrow{font-size:14px;letter-spacing:.14em;text-transform:uppercase;font-weight:900;color:var(--orange)}h1{font-size:clamp(42px,6vw,76px);line-height:1.03;margin:10px 0 16px;font-weight:950;letter-spacing:-.04em}h2{font-size:clamp(30px,4vw,52px);line-height:1.08;margin:0 0 14px;font-weight:950;letter-spacing:-.03em}h3{font-size:22px;margin:0 0 10px}.lead{font-size:19px;line-height:1.8;color:#40535c}.hero-image,.photo{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);min-height:360px;background:#ddd}.hero-image img,.photo img{width:100%;height:100%;object-fit:cover}.pillrow{display:flex;flex-wrap:wrap;gap:9px;margin:22px 0}.pill{padding:8px 13px;border-radius:999px;background:#f3efe6;border:1px solid var(--line);font-size:14px;font-weight:800}.menu-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px}.route{background:var(--card);border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:var(--shadow);cursor:pointer;transition:.2s}.route:hover{transform:translateY(-4px)}.route img{width:100%;height:160px;object-fit:cover}.route-body{padding:18px}.route-num{display:inline-flex;width:34px;height:34px;align-items:center;justify-content:center;border-radius:50%;background:var(--orange);color:#fff;font-weight:900;margin-bottom:8px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow)}.card.green{background:#eef8f3;border-color:#b9d8ca}.card.orange{background:#fff1eb;border-color:#f0c0b2}.card.blue{background:#eef7fc;border-color:#bed9ea}.card.gold{background:#fff8df;border-color:#eed693}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:18px}.small{font-size:14px;color:var(--muted);line-height:1.6}.big-cn{font-size:30px;font-weight:950}.roman{font-size:17px;color:#33515c;margin-top:4px}.jyut{color:var(--green)}.pinyin{color:#a4482e}.vocab-table{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border:1px solid var(--line);border-radius:18px;background:#fff}.vocab-table th,.vocab-table td{padding:13px 14px;border-bottom:1px solid #efe2cd;text-align:left;vertical-align:top}.vocab-table th{background:#f5ead8;font-size:14px}.vocab-table tr:last-child td{border-bottom:0}.speech{padding:16px 18px;border-radius:18px;background:#fff;border:1px solid var(--line);margin:10px 0}.speaker{font-weight:900;color:var(--orange);margin-bottom:6px}.story{font-size:19px;line-height:1.95}.story p{margin:0 0 14px}.choices{display:grid;gap:12px;margin-top:16px}.choice{display:flex;align-items:center;gap:14px;padding:17px;border-radius:18px;background:#fff;border:2px solid #ead8bd;cursor:pointer;font-weight:800;font-size:18px;transition:.15s}.choice:hover{border-color:var(--green);transform:translateX(3px)}.choice .letter{flex:0 0 38px;width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--green);color:#fff;font-weight:950}.feedback{display:none;margin-top:14px;border-radius:18px;padding:16px 18px;font-weight:800}.feedback.show{display:block}.feedback.good{background:#e9f7ee;color:#195737;border:1px solid #acd8bb}.feedback.bad{background:#fff0ed;color:#853529;border:1px solid #f0b6ab}.progress{height:8px;background:#eadfcf;border-radius:999px;overflow:hidden;margin:0 0 24px}.progress>div{height:100%;background:linear-gradient(90deg,var(--orange),var(--gold),var(--green));width:0}.lesson-tag{font-weight:900;color:var(--green);margin-bottom:8px}.compare{display:grid;grid-template-columns:1fr 1fr;gap:14px}.compare .lang{border-radius:18px;padding:18px;background:#fff}.compare .lang.m{border-left:5px solid var(--orange)}.compare .lang.c{border-left:5px solid var(--green)}.order-builder{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.food-options{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.food-chip{padding:13px;border:1px solid var(--line);border-radius:14px;background:#fff;cursor:pointer;font-weight:800}.food-chip.selected{background:#e6f3ee;border-color:var(--green);color:var(--green2)}.receipt{background:#fff;border:1px dashed #bca47e;border-radius:18px;padding:20px;min-height:260px}.receipt ul{padding-left:20px}.score{font-size:54px;font-weight:950;color:var(--orange)}.footer-nav{margin-top:26px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.notice{background:#fff7dd;border:1px solid #efd285;border-radius:18px;padding:14px 16px;line-height:1.6}.quote{font-size:28px;line-height:1.5;font-weight:900}.hidden{display:none!important}@media(max-width:900px){.hero,.grid2,.grid3,.order-builder{grid-template-columns:1fr}.menu-grid{grid-template-columns:1fr 1fr}.shell{padding:16px}.hero-text{padding:28px}.topbar{padding:10px 14px}.nav-actions .btn.light{display:none}}@media(max-width:560px){.menu-grid,.food-options{grid-template-columns:1fr}.compare{grid-template-columns:1fr}.btn{padding:10px 13px}.hero-image{min-height:260px}.vocab-table{font-size:14px}.vocab-table th,.vocab-table td{padding:10px}.story{font-size:18px}}
+</style>
+<style>
+.skip-link{position:fixed;left:12px;top:-80px;z-index:100;background:#fff;color:var(--green2);padding:10px 14px;border-radius:10px;font-weight:900;box-shadow:var(--shadow)}.skip-link:focus{top:12px}.view:focus{outline:none}.route:focus-visible,.choice:focus-visible,.food-chip:focus-visible,.btn:focus-visible{outline:4px solid rgba(43,123,185,.35);outline-offset:3px}.route[role="button"]{position:relative}.route[role="button"]:focus-visible{transform:translateY(-4px)}.choice.correct{border-color:#2f8f5b;background:#e9f7ee}.choice.incorrect{border-color:#c9503b;background:#fff0ed}.choice[aria-disabled="true"]{cursor:default}.top-status{font-size:13px;font-weight:900;color:var(--green2);white-space:nowrap}.progress>div{transition:width .35s ease}.receipt{position:sticky;top:92px}.receipt-result{padding:14px 0}.receipt-result+.receipt-result{border-top:1px dashed var(--line)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}noscript{display:block;margin:16px auto;max-width:720px;padding:16px;background:#fff0ed;border:1px solid #f0b6ab;border-radius:14px}@media(max-width:900px){.top-status{display:none}.receipt{position:static}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#lessonContent">跳到課程內容</a>
+<div class="app">
+  <div class="topbar">
+    <div class="brand"><span class="dot"></span><span style="margin-left:36px">香港美食與點餐華語</span></div>
+    <div class="nav-actions"><span class="top-status" id="topStatus" aria-live="polite">首頁</span><button class="btn light" onclick="go('menu')">主選單</button><button class="btn primary" onclick="go('builder')">模擬點餐</button></div>
+  </div>
+  <main class="shell" id="lessonContent">
+    <div class="progress"><div id="progressBar"></div></div>
+
+    <section id="home" class="view active">
+      <div class="hero">
+        <div class="hero-text">
+          <div class="eyebrow">A2–B1 Interactive Chinese Lesson</div>
+          <h1>香港美食<br>與點餐華語</h1>
+          <p class="lead">在茶餐廳、酒樓和街頭小吃店，用華語完成真正的點餐任務。每個單元都有<strong>普通話拼音</strong>、<strong>香港廣東話</strong>與<strong>粵拼</strong>。</p>
+          <div class="pillrow"><span class="pill">茶餐廳</span><span class="pill">飲茶</span><span class="pill">街頭小吃</span><span class="pill">角色扮演</span></div>
+          <button class="btn orange" onclick="go('menu')">開始上課 →</button>
+        </div>
+        <div class="hero-image"><img src="assets/cha_chaan_teng.jpg" alt="香港茶餐廳早餐"></div>
+      </div>
+    </section>
+
+    <section id="menu" class="view">
+      <div class="section-head"><div><div class="eyebrow">Interactive Menu</div><h2>你今天想學哪一條路線？</h2><p class="lead">可以照順序學，也可以讓學生自己選。</p></div></div>
+      <div class="menu-grid">
+        <div class="route" onclick="go('vocab')"><img src="assets/cha_chaan_teng.jpg" alt="茶餐廳早餐"><div class="route-body"><span class="route-num">1</span><h3>香港美食詞彙</h3><p class="small">先認識奶茶、菠蘿包、蛋撻、雲吞麵等高頻詞。</p></div></div>
+        <div class="route" onclick="go('story1')"><img src="assets/order_counter.jpg" alt="在茶餐廳櫃檯點餐"><div class="route-body"><span class="route-num">2</span><h3>茶餐廳早餐</h3><p class="small">讀故事、學套餐、練習「我要……」「再要……」。</p></div></div>
+        <div class="route" onclick="go('story2')"><img src="assets/dim_sum.jpg" alt="蝦餃、燒賣與叉燒包"><div class="route-body"><span class="route-num">3</span><h3>和家人飲茶</h3><p class="small">蝦餃、燒賣、叉燒包、加點與茶位文化。</p></div></div>
+        <div class="route" onclick="go('story3')"><img src="assets/street_market.jpg" alt="香港街頭小吃攤"><div class="route-body"><span class="route-num">4</span><h3>香港街頭小吃</h3><p class="small">魚蛋、雞蛋仔、腸粉、少辣與問價錢。</p></div></div>
+      </div>
+    </section>
+
+    <section id="vocab" class="view">
+      <div class="section-head"><div><div class="eyebrow">Vocabulary</div><h2>香港美食詞彙</h2><p class="lead">先看普通話，再比較香港人常說的廣東話。</p></div><button class="btn gold" onclick="go('phrases')">下一關 →</button></div>
+      <table class="vocab-table">
+        <tr><th>食物／飲品</th><th>普通話拼音</th><th>廣東話／粵拼</th><th>小提醒</th></tr>
+        <tr><td><b>奶茶</b></td><td class="pinyin">nǎichá</td><td class="jyut">奶茶 naai5 caa4</td><td>港式奶茶通常茶味比較濃。</td></tr>
+        <tr><td><b>菠蘿包</b></td><td class="pinyin">bōluó bāo</td><td class="jyut">菠蘿包 bo1 lo4 baau1</td><td>不一定有菠蘿；名稱來自表面紋路。</td></tr>
+        <tr><td><b>蛋撻</b></td><td class="pinyin">dàntà</td><td class="jyut">蛋撻 daan6 taat1</td><td>常見港式甜點。</td></tr>
+        <tr><td><b>雲吞麵</b></td><td class="pinyin">yúntūn miàn</td><td class="jyut">雲吞麵 wan4 tan1 min6</td><td>常見蝦肉雲吞＋細麵。</td></tr>
+        <tr><td><b>叉燒包</b></td><td class="pinyin">chāshāo bāo</td><td class="jyut">叉燒包 caa1 siu1 baau1</td><td>飲茶經典點心。</td></tr>
+        <tr><td><b>燒賣</b></td><td class="pinyin">shāomài</td><td class="jyut">燒賣 siu1 maai6</td><td>酒樓版與街頭魚肉燒賣不太一樣。</td></tr>
+        <tr><td><b>凍檸茶</b></td><td class="pinyin">dòng níng chá</td><td class="jyut">凍檸茶 dung3 ning4 caa4</td><td>「凍」在香港常表示冰的。</td></tr>
+        <tr><td><b>鴛鴦</b></td><td class="pinyin">yuānyāng</td><td class="jyut">鴛鴦 jyun1 joeng1</td><td>咖啡＋奶茶。</td></tr>
+      </table>
+    </section>
+
+    <section id="phrases" class="view">
+      <div class="section-head"><div><div class="eyebrow">Survival Phrases</div><h2>點餐一定會用到的句子</h2></div></div>
+      <div class="grid2">
+        <div class="card orange"><h3>普通話</h3>
+          <div class="speech"><b>我要一杯熱奶茶。</b><div class="roman pinyin">Wǒ yào yì bēi rè nǎichá.</div></div>
+          <div class="speech"><b>請給我一個菠蘿包。</b><div class="roman pinyin">Qǐng gěi wǒ yí ge bōluó bāo.</div></div>
+          <div class="speech"><b>這個是熱的還是冷的？</b><div class="roman pinyin">Zhège shì rè de háishi lěng de?</div></div>
+          <div class="speech"><b>可以再加一份嗎？</b><div class="roman pinyin">Kěyǐ zài jiā yí fèn ma?</div></div>
+        </div>
+        <div class="card green"><h3>香港廣東話</h3>
+          <div class="speech"><b>唔該，一杯熱奶茶。</b><div class="roman jyut">m4 goi1, jat1 bui1 jit6 naai5 caa4.</div></div>
+          <div class="speech"><b>我要個菠蘿包。</b><div class="roman jyut">ngo5 jiu3 go3 bo1 lo4 baau1.</div></div>
+          <div class="speech"><b>呢個係熱定凍㗎？</b><div class="roman jyut">ni1 go3 hai6 jit6 ding6 dung3 gaa3?</div></div>
+          <div class="speech"><b>唔該，加多一份。</b><div class="roman jyut">m4 goi1, gaa1 do1 jat1 fan6.</div></div>
+        </div>
+      </div>
+      <div class="notice" style="margin-top:16px"><b>老師可以提醒：</b>香港廣東話的「唔該」既可以表示「請／麻煩你」，也常用於接受服務後表示謝意；「多謝」則更偏向感謝對方送你東西、幫你較大的忙等情況。</div>
+      <div class="footer-nav"><button class="btn light" onclick="go('vocab')">← 詞彙</button><button class="btn primary" onclick="go('story1')">進入茶餐廳故事 →</button></div>
+    </section>
+
+    <section id="story1" class="view">
+      <div class="section-head"><div><div class="lesson-tag">故事一</div><h2>第一次去茶餐廳</h2><p class="lead">目標：早餐、套餐、加點。</p></div></div>
+      <div class="grid2">
+        <div class="card"><div class="story"><p>今天早上，小美和朋友去香港的茶餐廳吃早餐。店裡很熱鬧，很多人都在喝奶茶、吃菠蘿包。</p><p>小美看了菜單，想點一份<strong>炒蛋多士</strong>和一杯<strong>熱奶茶</strong>。她先問店員有沒有早餐套餐。店員說有，而且套餐還可以加一個蛋撻。</p><p>最後，小美點了一份 A 餐，再加一個蛋撻。她覺得第一次在香港茶餐廳點餐很有趣。</p></div></div>
+        <div class="photo"><img src="assets/order_counter.jpg" alt="茶餐廳點餐"></div>
+      </div>
+      <div class="card green" style="margin-top:16px"><h3>普通話拼音（節選）</h3><p class="roman pinyin">Jīntiān zǎoshang, Xiǎoměi hé péngyǒu qù Xiānggǎng de chácāntīng chī zǎocān.</p><p class="roman pinyin">Xiǎoměi kàn le càidān, xiǎng diǎn yí fèn chǎodàn duōshì hé yì bēi rè nǎichá.</p></div>
+      <div class="footer-nav"><button class="btn light" onclick="go('phrases')">← 上一頁</button><button class="btn primary" onclick="go('dialogue1')">看點餐對話 →</button></div>
+    </section>
+
+    <section id="dialogue1" class="view">
+      <div class="section-head"><div><div class="eyebrow">Dialogue</div><h2>茶餐廳怎麼點？</h2></div></div>
+      <div class="grid2">
+        <div class="card orange"><h3>普通話對話</h3>
+          <div class="speech"><div class="speaker">店員</div>你好，幾位？<div class="roman pinyin">Nǐ hǎo, jǐ wèi?</div></div>
+          <div class="speech"><div class="speaker">小美</div>兩位，謝謝。<div class="roman pinyin">Liǎng wèi, xièxie.</div></div>
+          <div class="speech"><div class="speaker">店員</div>想吃什麼？<div class="roman pinyin">Xiǎng chī shénme?</div></div>
+          <div class="speech"><div class="speaker">小美</div>我要一份炒蛋多士和一杯熱奶茶。<div class="roman pinyin">Wǒ yào yí fèn chǎodàn duōshì hé yì bēi rè nǎichá.</div></div>
+          <div class="speech"><div class="speaker">店員</div>要不要加一個蛋撻？<div class="roman pinyin">Yào bú yào jiā yí ge dàntà?</div></div>
+        </div>
+        <div class="card green"><h3>廣東話版本</h3>
+          <div class="speech"><div class="speaker">侍應</div>幾多位呀？<div class="roman jyut">gei2 do1 wai2 aa3?</div></div>
+          <div class="speech"><div class="speaker">小美</div>兩位，唔該。<div class="roman jyut">loeng5 wai2, m4 goi1.</div></div>
+          <div class="speech"><div class="speaker">侍應</div>想食啲咩呀？<div class="roman jyut">soeng2 sik6 di1 me1 aa3?</div></div>
+          <div class="speech"><div class="speaker">小美</div>我要一份炒蛋多士，同埋一杯熱奶茶。<div class="roman jyut">ngo5 jiu3 jat1 fan6 caau2 daan6 do1 si2, tung4 maai4 jat1 bui1 jit6 naai5 caa4.</div></div>
+          <div class="speech"><div class="speaker">侍應</div>要唔要加個蛋撻呀？<div class="roman jyut">jiu3 m4 jiu3 gaa1 go3 daan6 taat1 aa3?</div></div>
+        </div>
+      </div>
+      <div class="footer-nav"><button class="btn light" onclick="go('story1')">← 故事</button><button class="btn gold" onclick="go('quiz1')">挑戰題 →</button></div>
+    </section>
+
+    <section id="quiz1" class="view">
+      <div class="section-head"><div><div class="eyebrow">Challenge 1</div><h2>你會怎麼點？</h2><p class="lead">你想吃菠蘿包、喝凍檸茶，而且店員問你要不要加蛋撻。</p></div></div>
+      <div class="choices">
+        <div class="choice" onclick="answer(this,'q1',true,'很好！你同時用了「我要……」和「再加……」兩個點餐結構。')"><span class="letter">A</span>我要一個菠蘿包、一杯凍檸茶，再加一個蛋撻。</div>
+        <div class="choice" onclick="answer(this,'q1',false,'這句文法本身沒有大問題，但內容不是在點餐。再想一次！')"><span class="letter">B</span>我要一本書和一張桌子。</div>
+        <div class="choice" onclick="answer(this,'q1',false,'「今天不坐車」和點餐情境無關。看看題目中的三樣食物。')"><span class="letter">C</span>我今天不坐車，謝謝。</div>
+      </div>
+      <div id="q1good" class="feedback good" role="status"></div><div id="q1bad" class="feedback bad" role="status"></div>
+      <div class="footer-nav"><button class="btn light" onclick="go('dialogue1')">← 對話</button><button class="btn primary" onclick="go('story2')">下一個故事 →</button></div>
+    </section>
+
+    <section id="story2" class="view">
+      <div class="section-head"><div><div class="lesson-tag">故事二</div><h2>和家人去飲茶</h2><p class="lead">目標：點心名稱、量詞「籠」、加點。</p></div></div>
+      <div class="grid2">
+        <div class="card"><div class="story"><p>星期天早上，阿明跟家人去酒樓飲茶。桌上有蝦餃、燒賣、叉燒包，大家一邊喝茶，一邊聊天。</p><p>阿明最喜歡蝦餃，媽媽喜歡叉燒包，外公想再點一籠燒賣。服務員推著點心車過來，阿明問：「這個是什麼？」服務員回答：「這是蝦餃，很受歡迎。」</p><p>最後，他們又加了一壺普洱茶。阿明終於明白香港人說的「一盅兩件」是什麼感覺。</p></div></div>
+        <div class="photo"><img src="assets/dim_sum.jpg" alt="香港飲茶"></div>
+      </div>
+      <div class="notice" style="margin-top:16px"><b>文化補充：</b>「飲茶」不只是喝茶，而是一起吃點心、聊天的社交活動；「一盅兩件」傳統上指一盅茶配兩件點心。</div>
+      <div class="footer-nav"><button class="btn light" onclick="go('quiz1')">← 上一頁</button><button class="btn primary" onclick="go('dimsumVocab')">學點心詞彙 →</button></div>
+    </section>
+
+    <section id="dimsumVocab" class="view">
+      <div class="section-head"><div><div class="eyebrow">Dim Sum</div><h2>飲茶必學詞彙</h2></div></div>
+      <div class="grid3">
+        <div class="card"><div class="big-cn">蝦餃</div><div class="roman pinyin">xiājiǎo</div><div class="roman jyut">haa1 gaau2</div><p class="small">蝦肉餡、半透明外皮。</p></div>
+        <div class="card"><div class="big-cn">燒賣</div><div class="roman pinyin">shāomài</div><div class="roman jyut">siu1 maai6</div><p class="small">豬肉／蝦肉點心常見。</p></div>
+        <div class="card"><div class="big-cn">叉燒包</div><div class="roman pinyin">chāshāo bāo</div><div class="roman jyut">caa1 siu1 baau1</div><p class="small">甜鹹叉燒餡。</p></div>
+        <div class="card"><div class="big-cn">一籠</div><div class="roman pinyin">yì lóng</div><div class="roman jyut">jat1 lung4</div><p class="small">點蒸籠點心常用的量詞。</p></div>
+        <div class="card"><div class="big-cn">加點</div><div class="roman pinyin">jiā diǎn</div><div class="roman jyut">gaa1 dim2</div><p class="small">再點更多食物。</p></div>
+        <div class="card"><div class="big-cn">普洱茶</div><div class="roman pinyin">pǔ'ěr chá</div><div class="roman jyut">pou2 lei2 caa4</div><p class="small">酒樓常見茶類之一。</p></div>
+      </div>
+      <div class="card green" style="margin-top:16px"><h3>兩句很實用</h3><div class="compare"><div class="lang m"><b>可以再加一籠蝦餃嗎？</b><div class="roman pinyin">Kěyǐ zài jiā yì lóng xiājiǎo ma?</div></div><div class="lang c"><b>唔該，加多籠蝦餃。</b><div class="roman jyut">m4 goi1, gaa1 do1 lung4 haa1 gaau2.</div></div></div></div>
+      <div class="footer-nav"><button class="btn light" onclick="go('story2')">← 故事</button><button class="btn gold" onclick="go('quiz2')">飲茶挑戰 →</button></div>
+    </section>
+
+    <section id="quiz2" class="view">
+      <div class="section-head"><div><div class="eyebrow">Challenge 2</div><h2>哪一句最自然？</h2><p class="lead">你們已經吃了一籠蝦餃，但大家還想再吃。</p></div></div>
+      <div class="choices">
+        <div class="choice" onclick="answer(this,'q2',true,'正確！「再加一籠」清楚表達原本已經有，現在還要增加一份。')"><span class="letter">A</span>可以再加一籠蝦餃嗎？</div>
+        <div class="choice" onclick="answer(this,'q2',false,'「喝」通常搭配飲料；蝦餃應該用「吃」。')"><span class="letter">B</span>可以再喝一籠蝦餃嗎？</div>
+        <div class="choice" onclick="answer(this,'q2',false,'「杯」不是蝦餃的量詞。這裡應使用「籠」。')"><span class="letter">C</span>可以再加一杯蝦餃嗎？</div>
+      </div>
+      <div id="q2good" class="feedback good" role="status"></div><div id="q2bad" class="feedback bad" role="status"></div>
+      <div class="footer-nav"><button class="btn light" onclick="go('dimsumVocab')">← 詞彙</button><button class="btn primary" onclick="go('story3')">去街頭小吃 →</button></div>
+    </section>
+
+    <section id="story3" class="view">
+      <div class="section-head"><div><div class="lesson-tag">故事三</div><h2>香港街頭小吃</h2><p class="lead">目標：問價錢、少辣、堂食／外賣。</p></div></div>
+      <div class="grid2">
+        <div class="photo"><img src="assets/street_market.jpg" alt="香港街頭小吃"></div>
+        <div class="card"><div class="story"><p>下午，小美去逛街。她看到一家街頭小吃店，很多人排隊買魚蛋、雞蛋仔和腸粉。</p><p>小美想吃魚蛋，可是她不太能吃辣，所以她說：「我要一份魚蛋，少辣。」接著她看到雞蛋仔，又問：「這個多少錢？」</p><p>店員問她要堂食還是外賣。小美等一下還要去坐電車，所以選擇外賣。</p></div></div>
+      </div>
+      <div class="footer-nav"><button class="btn light" onclick="go('quiz2')">← 上一頁</button><button class="btn primary" onclick="go('streetVocab')">學街頭用語 →</button></div>
+    </section>
+
+    <section id="streetVocab" class="view">
+      <div class="section-head"><div><div class="eyebrow">Street Food</div><h2>街頭點餐常用說法</h2></div></div>
+      <div class="grid2">
+        <div class="card orange"><h3>普通話</h3>
+          <div class="speech"><b>我要一份魚蛋，少辣。</b><div class="roman pinyin">Wǒ yào yí fèn yúdàn, shǎo là.</div></div>
+          <div class="speech"><b>這個多少錢？</b><div class="roman pinyin">Zhège duōshao qián?</div></div>
+          <div class="speech"><b>我要外帶。</b><div class="roman pinyin">Wǒ yào wàidài.</div></div>
+        </div>
+        <div class="card green"><h3>廣東話</h3>
+          <div class="speech"><b>唔該，一份魚蛋，少辣。</b><div class="roman jyut">m4 goi1, jat1 fan6 jyu4 daan2, siu2 laat6.</div></div>
+          <div class="speech"><b>呢個幾多錢？</b><div class="roman jyut">ni1 go3 gei2 do1 cin2?</div></div>
+          <div class="speech"><b>外賣，唔該。</b><div class="roman jyut">ngoi6 maai6, m4 goi1.</div></div>
+        </div>
+      </div>
+      <div class="grid3" style="margin-top:16px"><div class="card"><h3>魚蛋</h3><div class="roman jyut">jyu4 daan2</div></div><div class="card"><h3>雞蛋仔</h3><div class="roman jyut">gai1 daan6 zai2</div></div><div class="card"><h3>腸粉</h3><div class="roman jyut">coeng4 fan2</div></div></div>
+      <div class="footer-nav"><button class="btn light" onclick="go('story3')">← 故事</button><button class="btn gold" onclick="go('priceTask')">問價錢挑戰 →</button></div>
+    </section>
+
+    <section id="priceTask" class="view">
+      <div class="section-head"><div><div class="eyebrow">Challenge 3</div><h2>小吃店老闆問你：「要辣嗎？」</h2><p class="lead">你只能吃一點點辣，還想問價錢。選最合適的回答。</p></div></div>
+      <div class="choices">
+        <div class="choice" onclick="answer(this,'q3',true,'很好！先說口味，再問價錢，情境最完整。')"><span class="letter">A</span>少辣，謝謝。這個多少錢？</div>
+        <div class="choice" onclick="answer(this,'q3',false,'如果你只能吃一點辣，「非常辣」就和需求相反了。')"><span class="letter">B</span>我要非常辣，越辣越好。</div>
+        <div class="choice" onclick="answer(this,'q3',false,'這句是在問時間，不是在處理口味或價格。')"><span class="letter">C</span>現在幾點？</div>
+      </div>
+      <div id="q3good" class="feedback good" role="status"></div><div id="q3bad" class="feedback bad" role="status"></div>
+      <div class="footer-nav"><button class="btn light" onclick="go('streetVocab')">← 街頭用語</button><button class="btn primary" onclick="go('culture')">香港點餐文化 →</button></div>
+    </section>
+
+    <section id="culture" class="view">
+      <div class="section-head"><div><div class="eyebrow">Culture Notes</div><h2>在香港點餐，還會聽到什麼？</h2></div></div>
+      <div class="grid3">
+        <div class="card"><h3>堂食</h3><p>在店裡吃。</p><div class="roman jyut">tong4 sik6</div><p class="small">普通話可以說「內用」。</p></div>
+        <div class="card"><h3>外賣</h3><p>帶走吃。</p><div class="roman jyut">ngoi6 maai6</div><p class="small">普通話常說「外帶」。</p></div>
+        <div class="card"><h3>埋單</h3><p>結帳。</p><div class="roman jyut">maai4 daan1</div><p class="small">普通話可說「買單／結帳」。</p></div>
+        <div class="card"><h3>少冰</h3><p>冰塊少一點。</p><div class="roman jyut">siu2 bing1</div></div>
+        <div class="card"><h3>走冰</h3><p>不要冰。</p><div class="roman jyut">zau2 bing1</div></div>
+        <div class="card"><h3>少甜</h3><p>甜度低一點。</p><div class="roman jyut">siu2 tim4</div></div>
+      </div>
+      <div class="notice" style="margin-top:16px"><b>注意：</b>「凍」在香港餐牌常表示冰的，例如「凍奶茶」「凍檸茶」；「熱」則表示熱飲。這和普通話日常使用「冷／冰」的習慣不完全一樣。</div>
+      <div class="footer-nav"><button class="btn light" onclick="go('priceTask')">← 上一頁</button><button class="btn primary" onclick="go('compare')">比較普通話與廣東話 →</button></div>
+    </section>
+
+    <section id="compare" class="view">
+      <div class="section-head"><div><div class="eyebrow">Language Comparison</div><h2>同一個功能，兩種說法</h2></div></div>
+      <div class="card"><table class="vocab-table"><tr><th>功能</th><th>普通話</th><th>廣東話</th></tr>
+        <tr><td>請／麻煩你</td><td>請給我……<br><span class="pinyin">Qǐng gěi wǒ...</span></td><td>唔該……<br><span class="jyut">m4 goi1...</span></td></tr>
+        <tr><td>我要</td><td>我要一杯奶茶。<br><span class="pinyin">Wǒ yào yì bēi nǎichá.</span></td><td>我要一杯奶茶。<br><span class="jyut">ngo5 jiu3 jat1 bui1 naai5 caa4.</span></td></tr>
+        <tr><td>再加</td><td>再加一個蛋撻。<br><span class="pinyin">Zài jiā yí ge dàntà.</span></td><td>加多個蛋撻。<br><span class="jyut">gaa1 do1 go3 daan6 taat1.</span></td></tr>
+        <tr><td>多少錢</td><td>這個多少錢？<br><span class="pinyin">Zhège duōshao qián?</span></td><td>呢個幾多錢？<br><span class="jyut">ni1 go3 gei2 do1 cin2?</span></td></tr>
+      </table></div>
+      <div class="footer-nav"><button class="btn light" onclick="go('culture')">← 文化</button><button class="btn orange" onclick="go('builder')">開始模擬點餐 →</button></div>
+    </section>
+
+    <section id="builder" class="view">
+      <div class="section-head"><div><div class="eyebrow">Interactive Ordering</div><h2>自己組一張訂單</h2><p class="lead">至少選 2 樣，再選口味與用餐方式。</p></div></div>
+      <div class="order-builder">
+        <div class="card"><h3>① 選食物／飲料</h3><div class="food-options" id="foodOptions"></div>
+          <h3 style="margin-top:20px">② 選需求</h3><div class="food-options" id="prefOptions"></div>
+          <button class="btn primary" style="margin-top:18px" onclick="buildOrder()">生成我的點餐句 →</button></div>
+        <div class="receipt"><div class="eyebrow">Your Order</div><h3>你的香港點餐任務</h3><div id="orderOutput" class="lead" aria-live="polite">先在左邊選餐點。</div></div>
+      </div>
+      <div class="footer-nav"><button class="btn light" onclick="go('compare')">← 比較說法</button><button class="btn gold" onclick="go('roleplay')">角色扮演 →</button></div>
+    </section>
+
+    <section id="roleplay" class="view">
+      <div class="section-head"><div><div class="eyebrow">Role Play</div><h2>兩人一組：完成點餐任務</h2></div></div>
+      <div class="grid3">
+        <div class="card orange"><h3>情境 A｜茶餐廳</h3><p class="quote">炒蛋多士＋熱奶茶</p><p>學生 A：客人<br>學生 B：店員</p><p class="small">至少說 3 句：我要……／還要……嗎？／謝謝。</p></div>
+        <div class="card green"><h3>情境 B｜酒樓</h3><p class="quote">一籠燒賣＋一壺普洱茶</p><p class="small">必須使用「一籠」「一壺」「再加」。</p></div>
+        <div class="card blue"><h3>情境 C｜街頭小吃</h3><p class="quote">魚蛋（少辣）＋雲吞麵</p><p class="small">必須問一次價錢，並決定堂食／外賣。</p></div>
+      </div>
+      <div class="card gold" style="margin-top:16px"><h3>加分挑戰</h3><p>先用普通話完成，再用廣東話版本完成一次。不能看稿時，可以只看關鍵詞。</p></div>
+      <div class="footer-nav"><button class="btn light" onclick="go('builder')">← 我的訂單</button><button class="btn primary" onclick="go('final')">最後挑戰 →</button></div>
+    </section>
+
+    <section id="final" class="view">
+      <div class="section-head"><div><div class="eyebrow">Final Challenge</div><h2>你能在香港完成一餐嗎？</h2><p class="lead">三題全部答對，就完成今天的任務。</p></div></div>
+      <div class="card"><h3>1. 店員問「幾位？」你和朋友兩個人。</h3><div class="choices"><div class="choice" onclick="finalAnswer(this,1,true)"><span class="letter">A</span>兩位，謝謝。</div><div class="choice" onclick="finalAnswer(this,1,false)"><span class="letter">B</span>兩杯，謝謝。</div></div></div>
+      <div class="card" style="margin-top:14px"><h3>2. 想再點一籠蝦餃。</h3><div class="choices"><div class="choice" onclick="finalAnswer(this,2,false)"><span class="letter">A</span>再加一杯蝦餃。</div><div class="choice" onclick="finalAnswer(this,2,true)"><span class="letter">B</span>再加一籠蝦餃。</div></div></div>
+      <div class="card" style="margin-top:14px"><h3>3. 廣東話「呢個幾多錢？」是什麼意思？</h3><div class="choices"><div class="choice" onclick="finalAnswer(this,3,true)"><span class="letter">A</span>這個多少錢？</div><div class="choice" onclick="finalAnswer(this,3,false)"><span class="letter">B</span>這個好吃嗎？</div></div></div>
+      <div id="finalResult" class="card green hidden" style="margin-top:18px;text-align:center"><div class="score" id="scoreText">0/3</div><h3 id="scoreMsg">完成！</h3><button class="btn orange" onclick="go('summary')">看課堂小結 →</button></div>
+    </section>
+
+    <section id="summary" class="view">
+      <div class="hero">
+        <div class="hero-text"><div class="eyebrow">Lesson Complete</div><h2>今天你已經會了</h2><div class="story"><p>✓ 認識香港常見食物與飲料。</p><p>✓ 用「我要……」「再加……」「這個多少錢？」點餐。</p><p>✓ 知道「一籠」「一杯」「一壺」等常用量詞。</p><p>✓ 分辨部分普通話與香港廣東話說法。</p><p>✓ 在茶餐廳、酒樓、街頭小吃三個情境完成任務。</p></div><button class="btn primary" onclick="go('menu')">回主選單</button></div>
+        <div class="hero-image"><img src="assets/dim_sum.jpg" alt="完成香港美食課"></div>
+      </div>
+    </section>
+  </main>
+</div>
+<noscript>這是一個互動課程，請開啟 JavaScript 才能切換單元、答題和組合訂單。</noscript>
+<script>
+const views=[...document.querySelectorAll('.view')];
+const orderFoods=[
+ {name:'熱奶茶',m:'一杯熱奶茶',c:'一杯熱奶茶',jy:'jat1 bui1 jit6 naai5 caa4'},
+ {name:'菠蘿包',m:'一個菠蘿包',c:'一個菠蘿包',jy:'jat1 go3 bo1 lo4 baau1'},
+ {name:'蛋撻',m:'一個蛋撻',c:'一個蛋撻',jy:'jat1 go3 daan6 taat1'},
+ {name:'蝦餃',m:'一籠蝦餃',c:'一籠蝦餃',jy:'jat1 lung4 haa1 gaau2'},
+ {name:'燒賣',m:'一籠燒賣',c:'一籠燒賣',jy:'jat1 lung4 siu1 maai6'},
+ {name:'魚蛋',m:'一份魚蛋',c:'一份魚蛋',jy:'jat1 fan6 jyu4 daan2'},
+ {name:'雲吞麵',m:'一碗雲吞麵',c:'一碗雲吞麵',jy:'jat1 wun2 wan4 tan1 min6'},
+ {name:'凍檸茶',m:'一杯凍檸茶',c:'一杯凍檸茶',jy:'jat1 bui1 dung3 ning4 caa4'}
+];
+const prefs=[
+ {name:'少辣',m:'少辣',c:'少辣',jy:'siu2 laat6'},
+ {name:'少冰',m:'少冰',c:'少冰',jy:'siu2 bing1'},
+ {name:'外帶／外賣',m:'我要外帶',c:'外賣，唔該',jy:'ngoi6 maai6, m4 goi1'},
+ {name:'內用／堂食',m:'我要內用',c:'堂食',jy:'tong4 sik6'}
+];
+let selectedFoods=[],selectedPrefs=[],finalState={1:null,2:null,3:null};
+const titles={home:'首頁',menu:'主選單',vocab:'香港美食詞彙',phrases:'點餐實用句',story1:'茶餐廳故事',dialogue1:'茶餐廳對話',quiz1:'挑戰一',story2:'飲茶故事',dimsumVocab:'飲茶詞彙',quiz2:'挑戰二',story3:'街頭小吃故事',streetVocab:'街頭用語',priceTask:'挑戰三',culture:'香港點餐文化',compare:'語言比較',builder:'模擬點餐',roleplay:'角色扮演',final:'最後挑戰',summary:'課堂小結'};
+function go(id,{updateHash=true}={}){const target=document.getElementById(id);if(!target)return;views.forEach(v=>v.classList.toggle('active',v===target));let i=views.indexOf(target);document.getElementById('progressBar').style.width=((i)/(views.length-1)*100)+'%';document.getElementById('topStatus').textContent=`${i+1} / ${views.length} · ${titles[id]||''}`;document.title=`${titles[id]||'互動學習'}｜香港美食與點餐華語`;if(updateHash)history.pushState(null,'','#'+id);localStorage.setItem('hk-food-lesson-view',id);window.scrollTo({top:0,behavior:'smooth'});target.setAttribute('tabindex','-1');target.focus({preventScroll:true});}
+function answer(clicked,q,good,msg){let g=document.getElementById(q+'good'),b=document.getElementById(q+'bad');g.classList.remove('show');b.classList.remove('show');(good?g:b).textContent=msg;(good?g:b).classList.add('show');clicked.closest('.choices').querySelectorAll('.choice').forEach(x=>x.classList.remove('correct','incorrect'));clicked.classList.add(good?'correct':'incorrect');}
+function toggleChoice(button,list,index){button.classList.toggle('selected');button.setAttribute('aria-pressed',button.classList.contains('selected'));list.includes(index)?list.splice(list.indexOf(index),1):list.push(index)}
+function renderBuilder(){let f=document.getElementById('foodOptions');orderFoods.forEach((x,i)=>{let b=document.createElement('button');b.type='button';b.className='food-chip';b.textContent=x.name;b.setAttribute('aria-pressed','false');b.onclick=()=>toggleChoice(b,selectedFoods,i);f.appendChild(b)});let p=document.getElementById('prefOptions');prefs.forEach((x,i)=>{let b=document.createElement('button');b.type='button';b.className='food-chip';b.textContent=x.name;b.setAttribute('aria-pressed','false');b.onclick=()=>{if(i>=2&&!selectedPrefs.includes(i)){[2,3].forEach(j=>{const at=selectedPrefs.indexOf(j);if(at>=0)selectedPrefs.splice(at,1);p.children[j].classList.remove('selected');p.children[j].setAttribute('aria-pressed','false')})}toggleChoice(b,selectedPrefs,i)};p.appendChild(b)});}
+function buildOrder(){let out=document.getElementById('orderOutput');if(selectedFoods.length<2){out.innerHTML='<b>還差一點：</b>請至少選兩樣食物或飲料。';return;}let fs=selectedFoods.map(i=>orderFoods[i]),ps=selectedPrefs.map(i=>prefs[i]);let m='我要'+fs.map(x=>x.m).join('、')+'。';if(ps.length)m+=' '+ps.map(x=>x.m).join('；')+'。';let c='唔該，我要'+fs.map(x=>x.c).join('、')+'。';if(ps.length)c+=' '+ps.map(x=>x.c).join('；')+'。';out.innerHTML=`<b>普通話：</b><br>${m}<br><br><b>廣東話：</b><br>${c}<br><br><b>粵拼重點：</b><br>${fs.map(x=>x.jy).join(' / ')}${ps.length?'<br>'+ps.map(x=>x.jy).join(' / '):''}`;}
+function finalAnswer(clicked,n,ok){finalState[n]=ok;clicked.closest('.choices').querySelectorAll('.choice').forEach(x=>x.classList.remove('correct','incorrect'));clicked.classList.add(ok?'correct':'incorrect');let done=Object.values(finalState).every(v=>v!==null);if(done){let score=Object.values(finalState).filter(Boolean).length;let box=document.getElementById('finalResult');box.classList.remove('hidden');document.getElementById('scoreText').textContent=score+'/3';document.getElementById('scoreMsg').textContent=score===3?'太好了！你完成香港點餐任務。':score===2?'很接近了！再複習一次量詞或情境。':'再練一次，你會越來越熟。';box.scrollIntoView({behavior:'smooth',block:'center'});}}
+renderBuilder();
+document.querySelectorAll('.route').forEach(route=>{route.setAttribute('role','button');route.setAttribute('tabindex','0');route.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();route.click()}})});
+document.querySelectorAll('.choice').forEach(choice=>{choice.setAttribute('role','button');choice.setAttribute('tabindex','0');choice.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choice.click()}})});
+document.querySelectorAll('img').forEach((img,i)=>{img.decoding='async';if(i>0)img.loading='lazy'});
+window.addEventListener('popstate',()=>go(location.hash.slice(1)||'home',{updateHash:false}));
+const initialView=location.hash.slice(1)||localStorage.getItem('hk-food-lesson-view')||'home';go(document.getElementById(initialView)?initialView:'home',{updateHash:false});
+</script>
+</body>
+</html>
